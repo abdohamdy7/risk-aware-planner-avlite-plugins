@@ -2,9 +2,8 @@
 
 Status: public source candidate; not yet a tagged release or community-registry listing.
 Repository: https://github.com/abdohamdy7/risk-aware-planner-avlite-plugins
-No redistribution license has been selected yet.
-Do not submit the registry PR until the code owners approve an OSI-approved
-license and it is added as LICENSE. Do not invent copyright ownership.
+Licensed under the [MIT License](LICENSE), selected by the repository owner.
+Compatibility validation and community-registry submission remain pending.
 
 ## Scope
 
@@ -76,7 +75,8 @@ collision probabilities; unchecked graph tails are not certified collision-free.
 
 ## Release checklist
 
-- [ ] Owner-approved LICENSE and asset attribution review.
+- [x] Owner-selected MIT LICENSE added.
+- [ ] Asset attribution review before redistributing additional demo assets.
 - [ ] Planner-only import, registration, settings reload and functional checks.
 - [ ] CI or recorded compatibility results for each supported host version.
 - [ ] Public source repository with this directory at its root.

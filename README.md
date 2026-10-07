@@ -10,7 +10,7 @@ No ROS, GUI, scenario, profile, world bridge or controller is included.
 This publication candidate is derived from that tested workspace; it has not
 yet passed a new full compatibility/demo run. See [PUBLICATION.md](PUBLICATION.md)
 for installation checks, simulation acceptance, release gates, and registry PR
-instructions. Public redistribution remains pending owner-approved licensing.
+instructions. Licensed under the [MIT License](LICENSE).
 
 ## Interface and responsibilities
 
@@ -95,5 +95,6 @@ not calibrated collision probabilities. The five-layer unchecked tail is not
 a full-route collision guarantee. Search limits can yield no feasible result
 even if a geometrical connection exists. Stop reasons must remain visible.
 
-License/publication: owner-approved licensing is still required. No license
-was invented for the original research code during this separation.
+## License
+
+[MIT License](LICENSE). Copyright (c) 2026 Abdulrahman Hamdy Ahmad.
