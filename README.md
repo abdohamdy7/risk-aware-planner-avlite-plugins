@@ -7,8 +7,10 @@ Community key: **p20_risk_aware_planner**. Strategy: **RiskAwarePlanner**.
 Category: **LocalPlanningStrategy**. Host tested: AVLite 0.5.3, Python 3.10.
 No ROS, GUI, scenario, profile, world bridge or controller is included.
 
-This publication candidate is derived from that tested workspace; it has not
-yet passed a new full compatibility/demo run. See [PUBLICATION.md](PUBLICATION.md)
+Release verification on 2026-10-07: all 144 regression checks passed on installed
+AVLite 0.5.3. On 0.6.4, 139 passed and five separate demo/preview integration
+checks failed; do not assume the companion demo supports 0.6.4. See
+[VERIFICATION.md](VERIFICATION.md) for scope and limitations, and [PUBLICATION.md](PUBLICATION.md)
 for installation checks, simulation acceptance, release gates, and registry PR
 instructions. Licensed under the [MIT License](LICENSE).
 
@@ -45,6 +47,25 @@ so stock AVLite can still display graph edges. It creates data objects, not
 Tk windows. All enhanced drawing is in the separate visualization companion.
 
 ## Install without the demo
+
+For the fully verified host configuration:
+
+```bash
+conda create -n risk-aware-avlite python=3.10 -y
+conda activate risk-aware-avlite
+python -m pip install 'avlite==0.5.3'
+git clone https://github.com/abdohamdy7/risk-aware-planner-avlite-plugins.git
+cd risk-aware-planner-avlite-plugins
+git checkout v0.1.0
+python -m pip install -r requirements.txt
+# Optional, only when enabling smoothing:
+python -m pip install -r requirements-smoothing.txt
+python -m avlite
+```
+
+This is an AVLite-discovered plugin, not a pip-installable Python distribution.
+Register the absolute checkout path as described below. The examples and enhanced
+visualization are separate and are not installed by cloning this repository.
 
 Use AVLite's community-plugin local-directory mapping for this repository
 root, not its `core/` directory. In a **copy** of a working profile:

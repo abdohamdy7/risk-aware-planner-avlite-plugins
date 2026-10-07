@@ -3,7 +3,8 @@
 Status: public source candidate; not yet a tagged release or community-registry listing.
 Repository: https://github.com/abdohamdy7/risk-aware-planner-avlite-plugins
 Licensed under the [MIT License](LICENSE), selected by the repository owner.
-Compatibility validation and community-registry submission remain pending.
+See VERIFICATION.md for completed compatibility checks and known companion-demo
+limitations. Community-registry acceptance remains pending maintainer review.
 
 ## Scope
 
@@ -17,7 +18,8 @@ this release. Do not copy machine-local runtime profiles into this repository.
 ## Check installation without starting the simulator
 
 Use a disposable environment. The original workspace was validated with Python
-3.10 / AVLite 0.5.3; this release copy still needs its own compatibility run.
+3.10 / AVLite 0.5.3; the release copy also passed all 144 regression checks on
+that published host version (see VERIFICATION.md).
 Do not interpret successful imports as driving validation.
 
 ```bash
@@ -79,7 +81,7 @@ collision probabilities; unchecked graph tails are not certified collision-free.
 - [ ] Asset attribution review before redistributing additional demo assets.
 - [ ] Planner-only import, registration, settings reload and functional checks.
 - [ ] CI or recorded compatibility results for each supported host version.
-- [ ] Public source repository with this directory at its root.
+- [x] Public source repository with this directory at its root.
 - [ ] README links to published optional examples/visualization repositories.
 - [ ] Create v0.1.0 only after validation; no tag is created by this preparation.
 - [ ] Replace the proposed repository/author in the registry draft if necessary.
